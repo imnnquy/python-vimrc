@@ -153,7 +153,10 @@ let g:riv_disable_folding=1
 
 " python executables for different plugins
 let g:pymode_python='python3'
-let g:syntastic_python_python_exec='python'
+let g:syntastic_python_python_exec='python3'
+let g:syntastic_python_pylint_post_args="--max-line-length=120"
+let g:pymode_options_max_line_length=120
+
 
 " rope
 let g:pymode_rope=0
